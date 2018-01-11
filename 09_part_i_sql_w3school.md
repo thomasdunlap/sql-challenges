@@ -54,7 +54,7 @@ JOIN
 	Suppliers
 ON
 	Products.SupplierID =
-    Suppliers.SupplierID
+  Suppliers.SupplierID
 GROUP BY
 	Products.SupplierID
 ORDER BY
@@ -103,14 +103,14 @@ LIMIT 1;
 ```sql
 SELECT
 	OrderDetails.OrderID,
-    SUM(Products.Price)
+  SUM(Products.Price)
 FROM
 	OrderDetails
 JOIN
 	Products
 ON
 	OrderDetails.ProductID =
-    Products.ProductID
+  Products.ProductID
 GROUP BY
 	OrderID
 ```
@@ -155,7 +155,7 @@ Buchanan,	Steven
 ```sql
 SELECT
 	LastName,
-    FirstName
+  FirstName
 FROM
 	Employees
 WHERE
